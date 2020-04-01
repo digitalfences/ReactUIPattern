@@ -7,12 +7,12 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      tabs = ["bulbasaur","charmander",'squirtle','pikachu','eevee']
+      tabs: ["bulbasaur","charmander",'squirtle','pikachu','eevee']
     }
   }
   componentDidMount(){
     this.setState({
-      tabs: tabs.map((tab,i) => {
+      tabs: this.state.tabs.map((tab,i) => {
         return(
           <Tab key={i} title={tab}></Tab>
         )
@@ -26,15 +26,9 @@ class App extends Component {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          
         </header>
+        <div className="tab-box">{this.state.tabs}</div>
       </div>
     );
   }
