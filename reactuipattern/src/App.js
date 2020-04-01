@@ -7,14 +7,14 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      tabs = []
+      tabs = ["bulbasaur","charmander",'squirtle','pikachu','eevee']
     }
   }
   componentDidMount(){
     this.setState({
       tabs: tabs.map((tab,i) => {
         return(
-          <Tab key={i} img={tab.img} content={tab.content}></Tab>
+          <Tab key={i} title={tab}></Tab>
         )
       })
     })
