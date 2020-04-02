@@ -1,0 +1,16 @@
+.tab{
+    width: 80%;
+    background-color: rgb(247, 200, 207);
+    border: 1px solid cyan;
+    display : flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+}
+.tab img{
+    width : 30%;
+    margin: 10%;
+}
+.tab .content{
+  color: darkblue;
+}
