@@ -21,6 +21,10 @@ body{
 }
 button{
   width: 20%;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  border: 1px solid pink;
 }
 .App-header {
   display: flex;
